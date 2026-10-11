@@ -14,7 +14,7 @@ export default defineConfig({
   webServer: process.env['BASE_URL']
     ? undefined
     : {
-        command: 'npm exec nx run portfolio:serve',
+        command: 'npx nx run portfolio:serve',
         url: 'http://localhost:4200',
         reuseExistingServer: !process.env['CI'],
         timeout: 120_000,
